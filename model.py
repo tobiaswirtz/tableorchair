@@ -15,7 +15,7 @@ train_table_dir = os.path.join("./data/chair/train")
 train_datagen = ImageDataGenerator(rescale=1/255)
 validation_datagen = ImageDataGenerator(rescale=1/255)
 
-# Flow training images in batches of 46 using train_datagen generator
+# Flow training images in batches of 36 using train_datagen generator
 train_generator = train_datagen.flow_from_directory(
             './data/train/',  # This is the source directory for training images
             classes = ['chair', 'table'],
